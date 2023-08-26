@@ -1,0 +1,26 @@
+.ex1 {
+    margin-left: 30px;
+  }
+  .style2{
+    position: relative;
+    height: 60px;
+    left: 300px;
+    top: 40px;
+    font-weight: bold;
+    font-family: Georgia, serif;
+}
+.style3{
+    position: relative;
+    height: 100px;
+    left: 60px;
+    top: 20px;
+    font-weight: bold;
+    font-family: Georgia, serif;
+}
+
+label{
+    font-weight: bold;
+    font-family: Georgia, serif;
+}
+
+

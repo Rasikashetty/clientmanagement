@@ -1,0 +1,46 @@
+
+<div container-fluid>
+  <div class="row ">
+        <div  class="col-lg-6 h-100 style2 " >
+                <div class="bg-success text-white w-50 " id="message1">{{message1}}</div>
+                
+                <h1> Create a Client</h1>
+                <p>Please fill in this form to create a client</p>
+
+                <hr style="width:50%;text-align:left;margin-left:0">
+                <div ><label >Name</label></div>
+                <div><input type="text" id="name" [(ngModel)]="name" placeholder="Enter Name"></div>  <br>
+                <div><label>Email </label></div>
+                <div><input type="email" id="Email"  [(ngModel)]="Email" placeholder="Enter Email"></div> <br>
+                <div><label>Address</label></div>
+                <div><input type="text" id="Address" [(ngModel)]="Address" placeholder="Enter Address"  ></div> <br>
+                <div><label>Password</label></div>
+                <div><input type="password" id="Password" [(ngModel)]="Password" placeholder="Enter Password"></div><br>
+                <div><label>Repeat Password</label>
+                <div><input type="password" id="RPassword" [(ngModel)]="RPassword" placeholder="Repeat Password"  ></div><br>
+                <h1 *ngIf="alertp"  style="color: red;font-family: Arial, Helvetica, sans-serif;font-size: smaller;"> Password & Repeat Password do not match! </h1></div>
+                                <hr style="width:50%;text-align:left;margin-left:0">
+                <div><button id="Register" (click)="Register()" (click)="clearForm()" >Register</button></div>
+                
+        </div>
+
+        <div class="col-lg-6 h-100 mt-5 style3 ">
+              
+                <div class="bg-success text-white w-50 " id="message2">{{message2}}</div>
+                <h1> Create a Meeting Schedule</h1>
+                <hr style="width:50%;text-align:left;margin-left:0">
+                <div><label>Meeting Topic</label></div>
+                <div><input type="text" [(ngModel)]="topic" id="topic" placeholder="Enter Meeting Topic"></div>  <br>
+                <div><label>Number of People</label></div>
+                <div><input type="number" [(ngModel)]="People" id="People" placeholder="Enter number of People"></div>  <br>
+                <div><label>Start Time</label></div>
+                <div><input type="datetime-local" [(ngModel)]="datetimer"  id="meeting-time"    name="meeting-time"   ></div>  <br>
+                <hr style="width:50%;text-align:left;margin-left:0">
+                <div><button (click)="Schedule()" id="Schedule"  (click)="clearForm()">Schedule</button></div>
+        </div>
+ </div>
+</div>
+
+
+
+
